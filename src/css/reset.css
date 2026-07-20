@@ -1,30 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
-p {
+p,
+ul,
+ol {
   margin: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
-  margin: 0;
+ul,
+ol {
   padding: 0;
   list-style: none;
 }
 
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
+button,
+input,
+textarea {
+  font: inherit;
 }
 
 img {
