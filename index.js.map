@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/main.js"],"sourcesContent":["document.addEventListener('pointerup', event => {\n  const button = event.target.closest('.button');\n\n  if (button) {\n    button.blur();\n  }\n});\n"],"names":["event","button"],"mappings":"ssBAAA,SAAS,iBAAiB,YAAaA,GAAS,CAC9C,MAAMC,EAASD,EAAM,OAAO,QAAQ,SAAS,EAEzCC,GACFA,EAAO,KAAI,CAEf,CAAC"}
