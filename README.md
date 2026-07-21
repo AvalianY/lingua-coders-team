@@ -1,113 +1,188 @@
-# Vanilla App Template
+<div align="center">
 
-Цей проект було створено за допомогою Vite. Для знайомства та налаштування
-додаткових можливостей [звернись до документації](https://vitejs.dev/).
+# English Excellence
 
-## Створення репозиторію за шаблоном
+### Eine responsive Landingpage für eine moderne Online-Englischschule
 
-Використовуй цей репозиторій організації GoIT як шаблон для створення
-репозиторію свого проекту. Для цього натисни на кнопку `«Use this template»` і
-обери опцію `«Create a new repository»`, як показано на зображенні.
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/de/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/de/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](https://developer.mozilla.org/de/docs/Web/JavaScript)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+[![GitHub Pages](https://img.shields.io/badge/Deployment-GitHub%20Pages-222?logo=github)](https://avaliany.github.io/lingua-coders-team/)
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+[Deutsch](README.md) · [Українська](README.uk.md) · [English](README.en.md)
 
-На наступному етапі відкриється сторінка створення нового репозиторію. Заповни
-поле його імені, переконайся, що репозиторій публічний, після чого натисни
-кнопку `«Create repository from template»`.
+[Live-Demo](https://avaliany.github.io/lingua-coders-team/) · [Repository](https://github.com/AvalianY/lingua-coders-team)
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+</div>
 
-Після того, як репозиторій буде створено, необхідно перейти в налаштування
-створеного репозиторію на вкладку `Settings` > `Actions` > `General` як показано
-на зображенні.
+## Inhaltsverzeichnis
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+- [Über das Projekt](#über-das-projekt)
+- [Funktionen](#funktionen)
+- [Seitenstruktur](#seitenstruktur)
+- [Technologien](#technologien)
+- [Projektstruktur](#projektstruktur)
+- [Installation und Start](#installation-und-start)
+- [Verfügbare Skripte](#verfügbare-skripte)
+- [Team-Workflow](#team-workflow)
+- [Deployment](#deployment)
+- [Team](#team)
 
-Проскроливши сторінку до самого кінця, в секції `«Workflow permissions»` обери
-опцію `«Read and write permissions»` і постав галочку в чекбоксі. Це необхідно
-для автоматизації процесу деплою проекту.
+## Über das Projekt
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+**English Excellence** ist ein Teamprojekt zur Entwicklung einer modernen Landingpage für eine Online-Englischschule. Die Website präsentiert die Vorteile der Schule, verfügbare Unterrichtsangebote, Lehrkräfte, Bewertungen und ein Formular für eine Probestunde.
 
-Тепер у тебе є особистий репозиторій проекту, зі структурою файлів та папок
-репозиторію-шаблону. Далі працюй з ним, як з будь-яким іншим особистим
-репозиторієм, клонуй його собі на комп'ютер, пиши код, роби коміти та відправляй
-їх на GitHub.
+Das Projekt wird mit einer komponentenorientierten HTML-Struktur entwickelt: Jeder Seitenbereich befindet sich in einer separaten Partial-Datei und wird beim Build mit Vite in die Hauptseite eingebunden.
 
-## Підготовка до роботи
+## Funktionen
 
-1. Переконайся, що на комп'ютері встановлено LTS-версію Node.js.
-   [Скачай та встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встанови базові залежності проекту в терміналі командою `npm install`.
-3. Запусти режим розробки, виконавши в терміналі команду `npm run dev`.
-4. Перейдіть у браузері за адресою
-   [http://localhost:5173](http://localhost:5173). Ця сторінка буде автоматично
-   перезавантажуватись після збереження змін у файли проекту.
+- Responsive Darstellung für Mobilgeräte, Tablets und Desktop-Bildschirme
+- Semantische HTML-Struktur
+- Mobile Navigation
+- Navigation über Ankerlinks zu den Seitenbereichen
+- Darstellung der Unterrichtsangebote
+- Bereich mit Lehrkräften
+- Kundenbewertungen
+- Kontakt- und Bewerbungsformular
+- Optimierte Bilder für unterschiedliche Bildschirmauflösungen
+- Automatischer Build und Deployment über GitHub Actions
 
-## Файли і папки
+## Seitenstruktur
 
-- Файли розмітки компонентів сторінки повинні лежати в папці `src/partials` та
-  імпортуватись до файлу `index.html`. Наприклад, файл з розміткою хедера
-  `header.html` створюємо у папці `partials` та імпортуємо в `index.html`.
-- Файли стилів повинні лежати в папці `src/css` та імпортуватись до HTML-файлів
-  сторінок. Наприклад, для `index.html` файл стилів називається `index.css`.
-- Зображення додавай до папки `src/img`. Збирач оптимізує їх, але тільки при
-  деплої продакшн версії проекту. Все це відбувається у хмарі, щоб не
-  навантажувати твій комп'ютер, тому що на слабких компʼютерах це може зайняти
-  багато часу.
+Die Landingpage besteht aus folgenden Bereichen:
 
-## Деплой
+1. Header und Navigation
+2. Mobile Menü
+3. Hero-Bereich
+4. Über uns
+5. Unsere Unterrichtsangebote
+6. Angebot zur Anmeldung
+7. Unsere Lehrkräfte
+8. Bewerbungsformular
+9. Bewertungen
+10. Footer
 
-Продакшн версія проекту буде автоматично збиратися та деплоїтись на GitHub
-Pages, у гілку `gh-pages`, щоразу, коли оновлюється гілка `main`. Наприклад,
-після прямого пуша або прийнятого пул-реквесту. Для цього необхідно у файлі
-`package.json` змінити значення прапора `--base=/<REPO>/`, для команди `build`,
-замінивши `<REPO>` на назву свого репозиторію, та відправити зміни на GitHub.
+## Technologien
 
-```json
-"build": "vite build --base=/<REPO>/",
+- **HTML5** — semantische Seitenstruktur
+- **CSS3** — Layout, Responsive Design und visuelle Gestaltung
+- **JavaScript** — interaktive Elemente
+- **Vite** — Entwicklungsserver und Produktions-Build
+- **vite-plugin-html-inject** — Einbindung wiederverwendbarer HTML-Partials
+- **vite-plugin-full-reload** — automatisches Neuladen während der Entwicklung
+- **PostCSS** — Verarbeitung und Sortierung von Media Queries
+- **Modern Normalize** — einheitliche Darstellung in verschiedenen Browsern
+- **Git und GitHub** — Versionskontrolle und Teamarbeit
+- **GitHub Actions und GitHub Pages** — CI/CD und Veröffentlichung
+
+## Projektstruktur
+
+```text
+lingua-coders-team/
+├── .github/
+│   └── workflows/          # GitHub-Actions-Workflows
+├── assets/                 # Projektressourcen
+├── src/
+│   ├── css/                # Globale und komponentenbezogene Styles
+│   ├── fonts/              # Lokale Schriftarten
+│   ├── img/                # Bilder und SVG-Sprites
+│   ├── partials/           # HTML-Komponenten der Seite
+│   ├── public/             # Statische öffentliche Dateien
+│   ├── index.html          # Haupteinstiegspunkt
+│   └── main.js             # JavaScript-Einstiegspunkt
+├── .editorconfig
+├── .gitignore
+├── .prettierrc.json
+├── package.json
+└── vite.config.js
 ```
 
-Далі необхідно зайти в налаштування GitHub-репозиторію (`Settings` > `Pages`) та
-виставити роздачу продакшн версії файлів з папки `/root` гілки `gh-pages`, якщо
-це не було зроблено автоматично.
+## Installation und Start
 
-![GitHub Pages settings](./assets/repo-settings.png)
+### Voraussetzungen
 
-### Статус деплою
+- [Node.js](https://nodejs.org/) LTS
+- npm
+- Git
 
-Статус деплою крайнього коміту відображається іконкою біля його ідентифікатора.
+### Lokale Installation
 
-- **Жовтий колір** - виконується збірка та деплой проекту.
-- **Зелений колір** - деплой завершився успішно.
-- **Червоний колір** - під час лінтингу, збірки чи деплою сталася помилка.
+```bash
+git clone https://github.com/AvalianY/lingua-coders-team.git
+cd lingua-coders-team
+npm install
+npm run dev
+```
 
-Більш детальну інформацію про статус можна переглянути натиснувши на іконку, і в
-вікні, що випадає, перейти за посиланням `Details`.
+Vite zeigt anschließend die lokale Adresse im Terminal an. Standardmäßig ist das:
 
-![Deployment status](./assets/deploy-status.png)
+```text
+http://localhost:5173
+```
 
-### Жива сторінка
+## Verfügbare Skripte
 
-Через якийсь час, зазвичай кілька хвилин, живу сторінку можна буде подивитися за
-адресою, вказаною на вкладці `Settings` > `Pages` в налаштуваннях репозиторію.
-Наприклад, ось посилання на живу версію для цього репозиторію
+```bash
+npm run dev
+```
 
-[https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
+Startet den lokalen Entwicklungsserver.
 
-Якщо відкриється порожня сторінка, переконайся, що у вкладці `Console` немає
-помилок пов'язаних з неправильними шляхами до CSS та JS файлів проекту
-(**404**). Швидше за все у тебе неправильне значення прапора `--base` для
-команди `build` у файлі `package.json`.
+```bash
+npm run build
+```
 
-## Як це працює
+Erstellt die optimierte Produktionsversion im Ordner `dist`.
 
-![How it works](./assets/how-it-works.png)
+```bash
+npm run preview
+```
 
-1. Після кожного пуша у гілку `main` GitHub-репозиторію, запускається
-   спеціальний скрипт (GitHub Action) із файлу `.github/workflows/deploy.yml`.
-2. Усі файли репозиторію копіюються на сервер, де проект ініціалізується та
-   проходить лінтинг та збірку перед деплоєм.
-3. Якщо всі кроки пройшли успішно, зібрана продакшн версія файлів проекту
-   відправляється у гілку `gh-pages`. В іншому випадку, у лозі виконання скрипта
-   буде вказано в чому проблема.
+Startet eine lokale Vorschau des Produktions-Builds.
+
+## Team-Workflow
+
+1. Für jede Aufgabe wird ein eigenes GitHub Issue erstellt.
+2. Die Entwicklung erfolgt in einer separaten Branch.
+3. Änderungen werden mit klaren Commit-Nachrichten gespeichert.
+4. Nach Abschluss wird ein Pull Request nach `main` geöffnet.
+5. Der Code wird geprüft und erst danach zusammengeführt.
+6. Direkte Änderungen an der geschützten `main`-Branch werden vermieden.
+7. Nach einem Merge in `main` wird der Deployment-Workflow automatisch gestartet.
+
+Beispiel für eine neue Branch:
+
+```bash
+git switch main
+git pull origin main
+git switch -c feature/section-name
+```
+
+## Deployment
+
+Der Produktions-Build wird mit GitHub Actions erstellt und über GitHub Pages veröffentlicht.
+
+Die Vite-Basisadresse ist für dieses Repository konfiguriert:
+
+```json
+"build": "vite build --base=/lingua-coders-team/"
+```
+
+Live-Version:
+
+**https://avaliany.github.io/lingua-coders-team/**
+
+## Team
+
+Das Projekt wird vom **Lingua Coders Team** entwickelt.
+
+Repository-Inhaber: [AvalianY](https://github.com/AvalianY)
+
+---
+
+<div align="center">
+
+Entwickelt als Teamprojekt zur praktischen Anwendung von HTML, CSS, Git und GitHub.
+
+</div>
