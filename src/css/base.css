@@ -128,6 +128,10 @@ button {
   padding: 0 20px;
 }
 
+.section {
+  padding-top: 60px;
+}
+
 @media screen and (min-width: 768px) {
   html {
     scroll-padding-top: 84px;
@@ -136,6 +140,10 @@ button {
   .container {
     max-width: 768px;
     padding: 0 32px;
+  }
+  
+  .section {
+    padding-top: 100px;
   }
 }
 
@@ -152,5 +160,9 @@ button {
   .container-inner {
     padding-right: 128px;
     padding-left: 128px;
+  }
+
+  .section {
+    padding-top: 150px;
   }
 }
