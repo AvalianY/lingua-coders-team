@@ -1,3 +1,144 @@
-<section id="leave-an-application">
-  <h1>Leave an application</h1>
+<section class="leave-an-application section" id="leave-an-application">
+  <div class="container container-inner">
+    <h2 class="leave-an-application-title">
+      Leave an <span class="leave-an-application-title-accent">application</span>
+    </h2>
+    <p class="leave-an-application-description">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+
+    <div class="leave-an-application-layout">
+      <div class="leave-an-application-promo">
+        <picture>
+          <source
+            srcset="./img/leave@1.jpg 1x, ./img/leave@2.jpg 2x"
+            type="image/jpeg"
+          />
+          <img
+            class="leave-an-application-promo-image"
+            src="./img/leave@1.jpg"
+            alt=""
+            width="492"
+            height="392"
+          />
+        </picture>
+        <div class="leave-an-application-promo-content">
+          <p class="leave-an-application-promo-number">1000</p>
+          <p class="leave-an-application-promo-text">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </div>
+
+      <form class="leave-an-application-form">
+        <div class="leave-an-application-fields">
+          <label class="leave-an-application-field">
+            <span class="sr-only">Name</span>
+            <input
+              class="leave-an-application-control"
+              type="text"
+              name="name"
+              placeholder="Name"
+              autocomplete="name"
+              pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ' \-]{2,50}"
+              required
+            />
+          </label>
+
+          <label class="leave-an-application-field">
+            <span class="sr-only">Email</span>
+            <input
+              class="leave-an-application-control"
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="email"
+              pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}"
+              required
+            />
+          </label>
+
+          <label class="leave-an-application-field">
+            <span class="sr-only">Phone</span>
+            <input
+              class="leave-an-application-control"
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              autocomplete="tel"
+              pattern="\+?[0-9 \(\)\-]{7,20}"
+              required
+            />
+          </label>
+
+          <label class="leave-an-application-field">
+            <span class="sr-only">Comment</span>
+            <textarea
+              class="leave-an-application-control leave-an-application-comment"
+              name="comment"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+        </div>
+
+        <fieldset class="leave-an-application-teachers">
+          <legend class="leave-an-application-teachers-title">Choose a teacher</legend>
+          <div class="leave-an-application-teachers-list">
+            <label class="leave-an-application-teacher">
+              <input
+                class="leave-an-application-radio sr-only"
+                type="radio"
+                name="teacher"
+                value="maria"
+                checked
+              />
+              <span class="leave-an-application-radio-label">Maria</span>
+            </label>
+            <label class="leave-an-application-teacher">
+              <input
+                class="leave-an-application-radio sr-only"
+                type="radio"
+                name="teacher"
+                value="artem"
+              />
+              <span class="leave-an-application-radio-label">Artem</span>
+            </label>
+            <label class="leave-an-application-teacher">
+              <input
+                class="leave-an-application-radio sr-only"
+                type="radio"
+                name="teacher"
+                value="ilona"
+              />
+              <span class="leave-an-application-radio-label">Ilona</span>
+            </label>
+            <label class="leave-an-application-teacher">
+              <input
+                class="leave-an-application-radio sr-only"
+                type="radio"
+                name="teacher"
+                value="volodymyr"
+              />
+              <span class="leave-an-application-radio-label">Volodymyr</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button
+          class="leave-an-application-button button button-primary"
+          type="submit"
+        >
+          Send
+        </button>
+        <p class="leave-an-application-policy">
+          By clicking on “Send” button, you agree to our
+          <a class="leave-an-application-policy-link" href="#">Privacy Policy</a>, and
+          allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
 </section>
