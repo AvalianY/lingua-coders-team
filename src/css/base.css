@@ -148,4 +148,9 @@ button {
     max-width: 1280px;
     padding: 0 64px;
   }
+
+  .container-inner {
+    padding-right: 128px;
+    padding-left: 128px;
+  }
 }
