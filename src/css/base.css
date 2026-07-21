@@ -9,6 +9,7 @@
 :root {
   --font-family: 'Manrope', sans-serif;
   --black: #121417;
+  --black-with-low-opacity: #12141780;
   --green: #4dc274;
   --dark-green: #38ae5f;
   --green-gradient: linear-gradient(
@@ -16,6 +17,7 @@
     #4dc274 6.04%,
     #bee8cc 127.48%
   );
+  --green-mint: #bee8cc;
   --light-green: #d4fde1;
   --gray: #f3f5f6;
   --white: #ffffff;
@@ -141,7 +143,7 @@ button {
     max-width: 768px;
     padding: 0 32px;
   }
-  
+
   .section {
     padding-top: 100px;
   }
