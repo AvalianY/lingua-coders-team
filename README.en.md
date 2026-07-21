@@ -35,8 +35,6 @@
 
 The project uses a component-oriented HTML structure. Each page section is stored in a separate partial file and injected into the main page during the Vite build process.
 
-> Project status: active development.
-
 ## Features
 
 - Responsive layout for mobile, tablet, and desktop screens
@@ -185,6 +183,6 @@ Repository owner: [AvalianY](https://github.com/AvalianY)
 
 <div align="center">
 
-Developed as a team project for practical work with HTML, CSS, JavaScript, Git, and GitHub.
+Developed as a team project for practical work with HTML, CSS, Git, and GitHub.
 
 </div>
