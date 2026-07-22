@@ -59,6 +59,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 
     padding: 40px 20px;
   }
@@ -90,6 +91,7 @@
     line-height: 1.71;
 
     width: 100%;
+    min-height: 132px;
     text-align: center;
     color: rgba(18, 20, 23, 0.5);
 
@@ -116,7 +118,7 @@
       font-size: 18px;
       line-height: 1.67;
 
-      margin-bottom: 64px;
+      margin: 0 19.5px 64px 19.5px;
     }
 
     .lessons-list {
@@ -167,13 +169,12 @@
   }
 
   @media screen and (min-width: 1280px) {
-    .container {
-      max-width: 1024px;
-      padding: 0;
-    }
-
     .lessons-title {
       font-size: 40px;
+    }
+
+    .lessons-text {
+      margin: 0px 179.5px 40px 179.5px;
     }
 
     .lessons-accent::after {
@@ -195,6 +196,10 @@
 
     .lessons-item-price {
       margin-bottom: 16px;
+    }
+
+    .lessons-item-text {
+      min-height: 148px;
     }
 
     .lessons-item-button {
