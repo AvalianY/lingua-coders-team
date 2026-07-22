@@ -1,6 +1,6 @@
 document.addEventListener('pointerup', event => {
   const interactiveElement = event.target.closest(
-    '.button, .header-social-link, .mobile-menu-social-link'
+    '.button, .header-social-link, .mobile-menu-social-link, .footer-social-link'
   );
 
   if (interactiveElement) {
