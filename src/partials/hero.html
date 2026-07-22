@@ -1,3 +1,52 @@
-<section id="hero">
-  <h1>Hero</h1>
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-box">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="./img/hero-desktop@1.jpg 1x, ./img/hero-desktop@2.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/hero-tablet@1.jpg 1x, ./img/hero-tablet@2.jpg 2x"
+        />
+        <img
+          class="hero-img"
+          src="./img/hero@1.jpg"
+          srcset="./img/hero@2.jpg 2x"
+          width="335"
+          height="709"
+          alt="Girl in headphones smiling while studying English"
+          title="Girl in headphones smiling while studying English"
+        />
+      </picture>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Discover the joy of learning
+          <span class="hero-accent">English</span>
+          with us!
+        </h1>
+
+        <a
+          href="#leave-an-application"
+          class="button button-primary"
+          title="Leave an application"
+        >
+          Leave an application
+        </a>
+
+        <a
+          href="#footer"
+          class="hero-scroll-btn"
+          aria-label="Scroll down"
+          title="Scroll down"
+        >
+          <svg class="hero-scroll-icon" width="20" height="20">
+            <use href="./img/icons.svg#arrow-down"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
