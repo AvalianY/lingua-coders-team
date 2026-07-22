@@ -26,7 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 83px;
+  scroll-padding-top: 67px;
 }
 
 body {
@@ -136,7 +136,7 @@ button {
 
 @media screen and (min-width: 768px) {
   html {
-    scroll-padding-top: 84px;
+    scroll-padding-top: 68px;
   }
 
   .container {
@@ -151,7 +151,7 @@ button {
 
 @media screen and (min-width: 1280px) {
   html {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 84px;
   }
 
   .container {
