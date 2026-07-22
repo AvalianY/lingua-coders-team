@@ -239,6 +239,13 @@
     overflow: hidden;
     border-radius: 30px;
     background-color: var(--green);
+    background-image: image-set(
+      url('../img/leave@1.jpg') 1x,
+      url('../img/leave@2.jpg') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 492px 392px;
   }
 
   .leave-an-application-promo::after {
@@ -265,11 +272,6 @@
       0 100%
     );
     content: '';
-  }
-
-  .leave-an-application-promo-image {
-    width: 492px;
-    height: 392px;
   }
 
   .leave-an-application-promo-content {
