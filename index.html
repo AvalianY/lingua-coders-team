@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/lingua-coders-team/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
     <title>English Excellence</title>
+    <script>
+      let savedTheme = null;
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)')
+        .matches
+        ? 'dark'
+        : 'light';
+
+      try {
+        savedTheme = localStorage.getItem('theme');
+      } catch {}
+
+      document.documentElement.dataset.theme = savedTheme || preferredTheme;
+    </script>
     <script type="module" crossorigin src="/lingua-coders-team/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/lingua-coders-team/assets/index-B_6XsU0U.css">
+    <link rel="stylesheet" crossorigin href="/lingua-coders-team/assets/index-CaMcXNnt.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -27,59 +41,70 @@
       </ul>
     </nav>
 
-    <ul class="header-social-list">
-      <li>
-        <a
-          class="header-social-link"
-          href="https://www.facebook.com/goITclub/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GoIT on Facebook"
-        >
-          <svg class="header-social-icon" width="28" height="28" aria-hidden="true">
-            <use href="/lingua-coders-team/assets/icons-0JS4z7PO.svg#facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a
-          class="header-social-link"
-          href="https://www.instagram.com/goitclub/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GoIT on Instagram"
-        >
-          <svg class="header-social-icon" width="28" height="28" aria-hidden="true">
-            <use href="/lingua-coders-team/assets/icons-0JS4z7PO.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a
-          class="header-social-link"
-          href="https://www.youtube.com/c/GoIT"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GoIT on YouTube"
-        >
-          <svg class="header-social-icon" width="28" height="28" aria-hidden="true">
-            <use href="/lingua-coders-team/assets/icons-0JS4z7PO.svg#youtube"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    <div class="header-actions">
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch to dark theme"
+        aria-pressed="false"
+      >
+        <span class="theme-toggle-label" aria-hidden="true">Dark</span>
+      </button>
 
-    <button
-      class="header-menu-button"
-      type="button"
-      aria-label="Open mobile menu"
-      aria-controls="mobile-menu"
-      aria-expanded="false"
-    >
-      <svg class="header-menu-icon" width="32" height="32" aria-hidden="true">
-        <use href="/lingua-coders-team/assets/icons-0JS4z7PO.svg#menu"></use>
-      </svg>
-    </button>
+      <ul class="header-social-list">
+        <li>
+          <a
+            class="header-social-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GoIT on Facebook"
+          >
+            <svg class="header-social-icon" width="28" height="28" aria-hidden="true">
+              <use href="/lingua-coders-team/assets/icons-0JS4z7PO.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-social-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GoIT on Instagram"
+          >
+            <svg class="header-social-icon" width="28" height="28" aria-hidden="true">
+              <use href="/lingua-coders-team/assets/icons-0JS4z7PO.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="header-social-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GoIT on YouTube"
+          >
+            <svg class="header-social-icon" width="28" height="28" aria-hidden="true">
+              <use href="/lingua-coders-team/assets/icons-0JS4z7PO.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <button
+        class="header-menu-button"
+        type="button"
+        aria-label="Open mobile menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
+        <svg class="header-menu-icon" width="32" height="32" aria-hidden="true">
+          <use href="/lingua-coders-team/assets/icons-0JS4z7PO.svg#menu"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 
