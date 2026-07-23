@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
     <title>English Excellence</title>
+    <script>
+      let savedTheme = null;
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)')
+        .matches
+        ? 'dark'
+        : 'light';
+
+      try {
+        savedTheme = localStorage.getItem('theme');
+      } catch {}
+
+      document.documentElement.dataset.theme = savedTheme || preferredTheme;
+    </script>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>

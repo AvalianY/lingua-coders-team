@@ -5,7 +5,7 @@
     line-height: 36px;
     letter-spacing: -0.02em;
     text-align: center;
-    color: var(--black);
+    color: var(--text-primary);
     margin-bottom: 16px;
   }
 
@@ -24,7 +24,7 @@
     z-index: -1;
     height: 12px;
     border-radius: 8px;
-    background-color: var(--green-mint);
+    background-color: var(--accent-highlight);
   }
 
   .about-text {
@@ -32,7 +32,7 @@
     font-size: 14px;
     line-height: 1.71;
     text-align: center;
-    color: var(--black-with-low-opacity);
+    color: var(--text-secondary);
     margin-bottom: 40px;
   }
 
@@ -44,7 +44,7 @@
 
   .about-item {
     padding: 32px;
-    background-color: var(--gray);
+    background-color: var(--surface-secondary);
     border-radius: 16px;
   }
 
@@ -62,7 +62,7 @@
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.02em;
-    color: var(--black);
+    color: var(--text-primary);
   }
 
   .about-featured {

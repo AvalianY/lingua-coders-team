@@ -1,11 +1,41 @@
 document.addEventListener('pointerup', event => {
   const interactiveElement = event.target.closest(
-    '.button, .header-social-link, .mobile-menu-social-link, .footer-social-link'
+    '.button, .theme-toggle, .header-social-link, .mobile-menu-social-link, .footer-social-link'
   );
 
   if (interactiveElement) {
     interactiveElement.blur();
   }
+});
+
+const root = document.documentElement;
+const themeToggle = document.querySelector('.theme-toggle');
+const themeToggleLabel = themeToggle.querySelector('.theme-toggle-label');
+const themeColor = document.querySelector('meta[name="theme-color"]');
+
+function applyTheme(theme) {
+  const isDark = theme === 'dark';
+
+  root.dataset.theme = theme;
+  themeToggle.setAttribute('aria-pressed', String(isDark));
+  themeToggle.setAttribute(
+    'aria-label',
+    `Switch to ${isDark ? 'light' : 'dark'} theme`
+  );
+  themeToggleLabel.textContent = isDark ? 'Light' : 'Dark';
+  themeColor.setAttribute('content', isDark ? '#121417' : '#ffffff');
+}
+
+applyTheme(root.dataset.theme || 'light');
+
+themeToggle.addEventListener('click', () => {
+  const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+
+  applyTheme(nextTheme);
+
+  try {
+    localStorage.setItem('theme', nextTheme);
+  } catch {}
 });
 
 const mobileMenu = document.querySelector('.mobile-menu');
