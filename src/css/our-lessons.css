@@ -5,7 +5,7 @@
     line-height: 1.13;
     letter-spacing: -0.02em;
     text-align: center;
-    color: var(--black);
+    color: var(--text-primary);
     margin-bottom: 16px;
   }
 
@@ -23,7 +23,7 @@
     width: 100%;
     height: 12px;
 
-    background-color: #bee8cc;
+    background-color: var(--accent-highlight);
     border-radius: 8px;
 
     z-index: -1;
@@ -34,7 +34,7 @@
     font-size: 14px;
     line-height: 1.71;
     text-align: center;
-    color: rgba(18, 20, 23, 0.5);
+    color: var(--text-secondary);
     margin-bottom: 40px;
   }
 
@@ -45,7 +45,7 @@
   }
 
   .lessons-item {
-    background-color: var(--white);
+    background-color: var(--surface-primary);
     border: 1px solid var(--green);
     border-radius: 16px;
   }
@@ -53,6 +53,15 @@
   .lessons-item:nth-child(even) {
     background-color: var(--green);
     border: none;
+  }
+
+  .lessons-item:nth-child(even) .lessons-item-title,
+  .lessons-item:nth-child(even) .lessons-item-price {
+    color: var(--white);
+  }
+
+  .lessons-item:nth-child(even) .lessons-item-text {
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .lessons-item-box {
@@ -70,7 +79,7 @@
     line-height: 1.2;
     letter-spacing: -0.02em;
     text-align: center;
-    color: var(--black);
+    color: var(--text-primary);
 
     margin-bottom: 16px;
   }
@@ -81,7 +90,7 @@
     line-height: 1.13;
     letter-spacing: -0.02em;
     text-align: center;
-    color: var(--black);
+    color: var(--text-primary);
     margin-bottom: 40px;
   }
 
@@ -93,7 +102,7 @@
     width: 100%;
     min-height: 132px;
     text-align: center;
-    color: rgba(18, 20, 23, 0.5);
+    color: var(--text-secondary);
 
     margin-bottom: 20px;
   }
